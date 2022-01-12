@@ -10,7 +10,8 @@ namespace MyFirstASPNETWEbApp.Controllers
     {
         public IActionResult Index()
         {
-            throw new IndexOutOfRangeException();
+
+            ViewBag.Title = "Home Page";
             return View();
         }
     }
