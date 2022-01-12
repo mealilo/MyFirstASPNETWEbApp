@@ -8,6 +8,10 @@
     <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="FanMail">Fan Mail</a>
+    </nav>
     <div>
         @RenderBody()
     </div>

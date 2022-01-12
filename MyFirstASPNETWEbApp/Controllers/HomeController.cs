@@ -14,5 +14,12 @@ namespace MyFirstASPNETWEbApp.Controllers
             ViewBag.Title = "Home Page";
             return View();
         }
+
+        public IActionResult FanMail()
+        {
+
+            ViewBag.Title = "Home Page";
+            return View();
+        }
     }
 }
