@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstASPNETWEbApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,18 @@ namespace MyFirstASPNETWEbApp.Controllers
             ViewBag.Title = "Home Page";
             return View();
         }
-
+        [HttpGet]
         public IActionResult FanMail()
         {
 
             ViewBag.Title = "Home Page";
+            return View();
+        }
+        [HttpPost]
+        public IActionResult FanMail(FanMailModel model)
+        {
+
+            
             return View();
         }
     }

@@ -3,16 +3,21 @@
 *@
 @{
 }
-
-<form>
+@model FanMailModel;
+<form method="post">
 
     <label>Send an email</label>
-    <input type="text" />
+    <input asp-for="from" name="from" type="text" />
     <label>Subject</label>
-    <input type="text" />
+    <input asp-for="subject" name="subject" type="text" />
 
     <br />
     <label>Message</label>
-    <textarea></textarea>
-    <input id="buttonSend" type="button" value="Send message!" />
+    <textarea asp-for="message" name="message"></textarea>
+    <input id="buttonSend" type="submit" value="Send message!" />
+
+
+    <div asp-validation-summary="All">
+
+    </div>
 </form>
